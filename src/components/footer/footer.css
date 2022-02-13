@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cu-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #3a3af10f;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    width: 100vw;
+}
+

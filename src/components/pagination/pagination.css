@@ -1,0 +1,21 @@
+.pagination-cont{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.pagination-cont > li {
+    padding: 5px;
+    list-style-type: none;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    margin: 0 2px;
+    cursor: pointer;
+    background-color: #3a3af10f;
+}
+
+.pagination-cont > li:active{
+    background-color: #3a3af157 !important;
+    color: whitesmoke;
+}

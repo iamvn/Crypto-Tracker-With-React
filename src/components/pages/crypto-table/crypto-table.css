@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.cu-container{
+    padding: 0px 5px;
+    height: 85vh!important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.cu-table{
+    width: 100vw;
+    border-collapse: collapse;
+}
+.cu-thead{
+    position: sticky;
+    top: 0;
+    box-shadow:8px -9px 20px 0px #00000094;
+    background: whitesmoke;
+}
+.cu-res-table{
+    display: flex;
+    height: 78vh;
+    overflow: auto;
+}
+#table-body > tr > td {
+    text-align: center;
+}
+.cu-table td, .cu-table th{
+    border: 1px solid #ddd;
+    padding: 2px;
+}
