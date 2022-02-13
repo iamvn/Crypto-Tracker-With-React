@@ -9,7 +9,6 @@ import About from './components/pages/about-me/about';
 
 function App() {
 const [currentPage, setcurrentPage] = useState(1);
-const [loading, setloading] = useState(false);
 const [dataPerPage, setDataPerPage] = useState(20);
 const [coinsInfo, setCoinsinfo] = useState([]);
 
@@ -34,14 +33,13 @@ const currentData = coinsInfo.slice(indexOfFirstData, indexOfLastData);
 
 
 const paginate =(pageNum) =>{
-  let test = document.getElementsByClassName(`list${pageNum}`);
   setcurrentPage(pageNum);
 }
 
   return (
     <BrowserRouter>
     <div className="App">
-      <Header totalFetchedData={coinsInfo.length} coinsInfo={currentData}/>
+      <Header totalFetchedData={coinsInfo.length} coinsInfo={currentData} setDataPerPage={setDataPerPage}/>
       <Routes>
         <Route path="/" element={<CryptoTable coinsInfoPerPage={currentData} dataPerPage={dataPerPage} totalData={coinsInfo.length} paginate={paginate}/>}>
         </Route>
